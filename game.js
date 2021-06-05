@@ -1604,7 +1604,7 @@ Game.OnStart.Connect((Connection)=>{
                 [new Color(200,130,10),new Color(255,160,45)],
             ]);
             // {{ Map Walls }} \\
-            for (i=0;i<=100;i++){
+            for (i=0;i<=15;i++){
             	let Block = new Proxy("Block");
                 Block.Parent = World;
                 Block.Position = new Vector(i,0);
@@ -1614,7 +1614,7 @@ Game.OnStart.Connect((Connection)=>{
                 Block.Parent = World;
                 Block.Position = new Vector(0,i);
             }
-            for (i=1;i<=12;i++){
+            for (i=1;i<=14;i++){
             	let Block = new Proxy("Block");
                 Block.Parent = World;
                 Block.Position = new Vector(15,i);
